@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap');
+
+@import './reset.scss';
+
+@import './animations.scss';
+
+$title-size-bg: 4rem;
+$main-color: #23233B;
+$main-font: 'Roboto', sans-serif;
+$btn-background: #CEFBE3;
+$btn-hover: linear-gradient(to right top, #f9f871, #b1e57a, #71cd87, #38b290, #039590);
+
+html {
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.main-header {
+    width: 100%;
+}
+
+.main-nav {
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    z-index: 20;
+    margin-top: 20px;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 50px;
+        margin-left: auto;
+
+        li a {
+            text-decoration: none;
+            display: inline-block;
+            color: #2F4858;
+            background: $btn-background;
+            padding: 5px 20px;
+            border-radius: 5px;
+            margin: 0 15px;
+            font-family: 'Roboto', sans-serif;
+            transition: all 2s ease;
+        }
+
+        li a:hover {
+            background: linear-gradient(to right top, #f9f871, #b1e57a, #71cd87, #38b290, #039590);
+            color: $main-color;
+        }
+    }
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100%;
+}
+
+.showcase {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background: $main-color;
+    z-index: 10;
+    position: relative;
+
+    .showcase-content {
+        height: 100vh;
+        width: 50%;
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url('../assets/images/profilepic.jpg');
+        background-size: cover;
+        position: relative;
+
+
+        .showcase-content-text {
+            position: absolute;
+            bottom: 50%;
+            transform: translate(50%);
+        }
+
+        .showcase-content-text  h1 {
+            margin: 0;
+            color: #fff;
+            font-family: 'Anton', sans-serif;
+            font-size: $title-size-bg;
+        }
+
+        .showcase-content-text .action-btn {
+            color: $main-color;
+            background: $btn-background;
+            display: inline-block;
+            padding: 5px 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+            font-family: $main-font;
+        }
+
+        .showcase-content-text .action-btn:hover {
+            background: $btn-hover;
+        }
+    }
+
+    .showcase-bio {
+        background: linear-gradient(to right top, #f9f871, #b1e57a, #71cd87, #38b290, #039590);
+        width: 50%;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        padding: 20px;
+        font-size: 1.5rem;
+        font-family: $main-font;
+        line-height: 1.5;
+        z-index: 10;
+    }
+
+    .icons {
+        top: 10%;
+        right: 0;
+        width: 50%;
+        height: calc(100% - 100px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: absolute;
+        z-index: 5;
+    }
+
+    .icons i {
+        position: absolute;
+        color: #fff;
+        font-size: 3rem;
+        left: 10%;
+    }
+
+    .icons .fa-code {
+        
+        top: 10%;
+        animation: moveIcons 8s ease infinite;
+        animation-delay: 0.5s;
+    }
+
+    .icons .fa-js {
+        top: 30%;
+        animation: moveIcons 8s ease infinite;
+        animation-delay: 2s;
+    }
+
+    .icons .fa-vuejs {
+        top: 70%;
+        animation: moveIcons 8s ease infinite;
+        animation-delay: 3s;
+    }
+
+    .icons .fa-php {
+        top: 90%;
+        animation: moveIcons 8s ease infinite;
+        animation-delay: 4s;
+    }
+
+}
+
+
+

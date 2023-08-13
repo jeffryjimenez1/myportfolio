@@ -1,0 +1,6 @@
+
+@keyframes moveIcons {
+    0% {transform: rotate(55deg); left: 10%; opacity: 10%;}
+    50% {transform: rotate(55deg); left: 80%; color: #f9f871;}
+    100% {transform: rotate(-55deg); left: 10%;}
+}

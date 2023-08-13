@@ -55,7 +55,12 @@ module.exports = {
         new HtmlWebpackPlugin({
             title: 'Webpack App',
             filename: 'index.html',
-            template: 'src/template.html'
-        })
+            template: 'src/pages/template.html'
+        }),
+        new HtmlWebpackPlugin({
+            title: 'Webpack App',
+            filename: 'thoughts.html',
+            template: 'src/pages/thoughts.html'
+        }),
     ]
 }

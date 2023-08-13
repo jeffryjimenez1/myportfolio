@@ -27,7 +27,43 @@ var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBP
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap);"]);
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `html, body, div, span, applet, object, iframe,
+___CSS_LOADER_EXPORT___.push([module.id, `.main-header {
+  width: 100%;
+}
+
+.main-nav {
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  z-index: 20;
+  margin-top: 20px;
+}
+.main-nav ul {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 50px;
+  margin-left: auto;
+}
+.main-nav ul li a {
+  text-decoration: none;
+  display: inline-block;
+  color: #2F4858;
+  background: #CEFBE3;
+  padding: 5px 20px;
+  border-radius: 5px;
+  margin: 0 15px;
+  font-family: "Roboto", sans-serif;
+  transition: all 2s ease;
+}
+.main-nav ul li a:hover {
+  background: linear-gradient(to right top, #f9f871, #b1e57a, #71cd87, #38b290, #039590);
+  color: #23233B;
+}
+
+html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -104,42 +140,6 @@ html {
 body {
   padding: 0;
   margin: 0;
-}
-
-.main-header {
-  width: 100%;
-}
-
-.main-nav {
-  color: #fff;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  position: fixed;
-  display: flex;
-  z-index: 20;
-  margin-top: 20px;
-}
-.main-nav ul {
-  display: flex;
-  justify-content: space-between;
-  margin-right: 50px;
-  margin-left: auto;
-}
-.main-nav ul li a {
-  text-decoration: none;
-  display: inline-block;
-  color: #2F4858;
-  background: #CEFBE3;
-  padding: 5px 20px;
-  border-radius: 5px;
-  margin: 0 15px;
-  font-family: "Roboto", sans-serif;
-  transition: all 2s ease;
-}
-.main-nav ul li a:hover {
-  background: linear-gradient(to right top, #f9f871, #b1e57a, #71cd87, #38b290, #039590);
-  color: #23233B;
 }
 
 .wrapper {
@@ -233,7 +233,7 @@ body {
   top: 90%;
   animation: moveIcons 8s ease infinite;
   animation-delay: 4s;
-}`, "",{"version":3,"sources":["webpack://./src/styles/_reset.scss","webpack://./src/styles/main.scss","webpack://./src/styles/_animations.scss"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;EAaC,SAAA;EACA,UAAA;EACA,SAAA;EACA,eAAA;EACA,aAAA;EACA,wBAAA;ACED;;ADAA,gDAAA;AACA;;EAEC,cAAA;ACGD;;ADDA;EACC,cAAA;ACID;;ADFA;EACC,gBAAA;ACKD;;ADHA;EACC,YAAA;ACMD;;ADJA;;EAEC,WAAA;EACA,aAAA;ACOD;;ADLA;EACC,yBAAA;EACA,iBAAA;ACQD;;ADLA;EACC,qBAAA;ACQD;;ACpDA;EACI;IAAI,wBAAA;IAA0B,SAAA;IAAW,YAAA;ED0D3C;ECzDE;IAAK,wBAAA;IAA0B,SAAA;IAAW,cAAA;ED8D5C;EC7DE;IAAM,yBAAA;IAA2B,SAAA;EDiEnC;AACF;AA1DA;EACI,SAAA;AA4DJ;;AAzDA;EACI,UAAA;EACA,SAAA;AA4DJ;;AAzDA;EACI,WAAA;AA4DJ;;AAzDA;EACI,WAAA;EACA,UAAA;EACA,SAAA;EACA,WAAA;EACA,eAAA;EACA,aAAA;EACA,WAAA;EACA,gBAAA;AA4DJ;AA1DI;EACI,aAAA;EACA,8BAAA;EACA,kBAAA;EACA,iBAAA;AA4DR;AA1DQ;EACI,qBAAA;EACA,qBAAA;EACA,cAAA;EACA,mBApCK;EAqCL,iBAAA;EACA,kBAAA;EACA,cAAA;EACA,iCAAA;EACA,uBAAA;AA4DZ;AAzDQ;EACI,sFAAA;EACA,cAhDC;AA2Gb;;AAtDA;EACI,aAAA;EACA,WAAA;AAyDJ;;AAtDA;EACI,SAAA;EACA,WAAA;EACA,aAAA;EACA,mBA9DS;EA+DT,WAAA;EACA,kBAAA;AAyDJ;AAvDI;EACI,aAAA;EACA,UAAA;EACA,4GAAA;EAEA,sBAAA;EACA,kBAAA;AAwDR;AArDQ;EACI,kBAAA;EACA,WAAA;EACA,yBAAA;AAuDZ;AApDQ;EACI,SAAA;EACA,WAAA;EACA,gCAAA;EACA,eAtFI;AA4IhB;AAnDQ;EACI,cAzFC;EA0FD,mBAxFK;EAyFL,qBAAA;EACA,iBAAA;EACA,kBAAA;EACA,gBAAA;EACA,iCA9FA;AAmJZ;AAlDQ;EACI,sFAhGA;AAoJZ;AAhDI;EACI,sFAAA;EACA,UAAA;EACA,kBAAA;EACA,QAAA;EACA,QAAA;EACA,aAAA;EACA,iBAAA;EACA,iCA9GI;EA+GJ,gBAAA;EACA,WAAA;AAkDR;AA/CI;EACI,QAAA;EACA,QAAA;EACA,UAAA;EACA,0BAAA;EACA,aAAA;EACA,sBAAA;EACA,6BAAA;EACA,kBAAA;EACA,UAAA;AAiDR;AA9CI;EACI,kBAAA;EACA,WAAA;EACA,eAAA;EACA,SAAA;AAgDR;AA7CI;EAEI,QAAA;EACA,qCAAA;EACA,qBAAA;AA8CR;AA3CI;EACI,QAAA;EACA,qCAAA;EACA,mBAAA;AA6CR;AA1CI;EACI,QAAA;EACA,qCAAA;EACA,mBAAA;AA4CR;AAzCI;EACI,QAAA;EACA,qCAAA;EACA,mBAAA;AA2CR","sourcesContent":["html, body, div, span, applet, object, iframe,\r\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\r\na, abbr, acronym, address, big, cite, code,\r\ndel, dfn, em, img, ins, kbd, q, s, samp,\r\nsmall, strike, strong, sub, sup, tt, var,\r\nb, u, i, center,\r\ndl, dt, dd, ol, ul, li,\r\nfieldset, form, label, legend,\r\ntable, caption, tbody, tfoot, thead, tr, th, td,\r\narticle, aside, canvas, details, embed, \r\nfigure, figcaption, footer, header, hgroup, \r\nmenu, nav, output, ruby, section, summary,\r\ntime, mark, audio, video {\r\n\tmargin: 0;\r\n\tpadding: 0;\r\n\tborder: 0;\r\n\tfont-size: 100%;\r\n\tfont: inherit;\r\n\tvertical-align: baseline;\r\n}\r\n/* HTML5 display-role reset for older browsers */\r\narticle, aside, details, figcaption, figure, \r\nfooter, header, hgroup, menu, nav, section {\r\n\tdisplay: block;\r\n}\r\nbody {\r\n\tline-height: 1;\r\n}\r\nol, ul {\r\n\tlist-style: none;\r\n}\r\nblockquote, q {\r\n\tquotes: none;\r\n}\r\nblockquote:before, blockquote:after,\r\nq:before, q:after {\r\n\tcontent: '';\r\n\tcontent: none;\r\n}\r\ntable {\r\n\tborder-collapse: collapse;\r\n\tborder-spacing: 0;\r\n}\r\n\r\na {\r\n\ttext-decoration: none;\r\n}","@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap');\r\n\r\n@import './reset.scss';\r\n\r\n@import './animations.scss';\r\n\r\n$title-size-bg: 4rem;\r\n$main-color: #23233B;\r\n$main-font: 'Roboto', sans-serif;\r\n$btn-background: #CEFBE3;\r\n$btn-hover: linear-gradient(to right top, #f9f871, #b1e57a, #71cd87, #38b290, #039590);\r\n\r\nhtml {\r\n    margin: 0;\r\n}\r\n\r\nbody {\r\n    padding: 0;\r\n    margin: 0;\r\n}\r\n\r\n.main-header {\r\n    width: 100%;\r\n}\r\n\r\n.main-nav {\r\n    color: #fff;\r\n    padding: 0;\r\n    margin: 0;\r\n    width: 100%;\r\n    position: fixed;\r\n    display: flex;\r\n    z-index: 20;\r\n    margin-top: 20px;\r\n\r\n    ul {\r\n        display: flex;\r\n        justify-content: space-between;\r\n        margin-right: 50px;\r\n        margin-left: auto;\r\n\r\n        li a {\r\n            text-decoration: none;\r\n            display: inline-block;\r\n            color: #2F4858;\r\n            background: $btn-background;\r\n            padding: 5px 20px;\r\n            border-radius: 5px;\r\n            margin: 0 15px;\r\n            font-family: 'Roboto', sans-serif;\r\n            transition: all 2s ease;\r\n        }\r\n\r\n        li a:hover {\r\n            background: linear-gradient(to right top, #f9f871, #b1e57a, #71cd87, #38b290, #039590);\r\n            color: $main-color;\r\n        }\r\n    }\r\n}\r\n\r\n.wrapper {\r\n    height: 100vh;\r\n    width: 100%;\r\n}\r\n\r\n.showcase {\r\n    margin: 0;\r\n    width: 100%;\r\n    height: 100vh;\r\n    background: $main-color;\r\n    z-index: 10;\r\n    position: relative;\r\n\r\n    .showcase-content {\r\n        height: 100vh;\r\n        width: 50%;\r\n        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),\r\n        url('../assets/images/profilepic.jpg');\r\n        background-size: cover;\r\n        position: relative;\r\n\r\n\r\n        .showcase-content-text {\r\n            position: absolute;\r\n            bottom: 50%;\r\n            transform: translate(50%);\r\n        }\r\n\r\n        .showcase-content-text  h1 {\r\n            margin: 0;\r\n            color: #fff;\r\n            font-family: 'Anton', sans-serif;\r\n            font-size: $title-size-bg;\r\n        }\r\n\r\n        .showcase-content-text .action-btn {\r\n            color: $main-color;\r\n            background: $btn-background;\r\n            display: inline-block;\r\n            padding: 5px 20px;\r\n            border-radius: 8px;\r\n            margin-top: 30px;\r\n            font-family: $main-font;\r\n        }\r\n\r\n        .showcase-content-text .action-btn:hover {\r\n            background: $btn-hover;\r\n        }\r\n    }\r\n\r\n    .showcase-bio {\r\n        background: linear-gradient(to right top, #f9f871, #b1e57a, #71cd87, #38b290, #039590);\r\n        width: 50%;\r\n        position: absolute;\r\n        top: 50%;\r\n        right: 0;\r\n        padding: 20px;\r\n        font-size: 1.5rem;\r\n        font-family: $main-font;\r\n        line-height: 1.5;\r\n        z-index: 10;\r\n    }\r\n\r\n    .icons {\r\n        top: 10%;\r\n        right: 0;\r\n        width: 50%;\r\n        height: calc(100% - 100px);\r\n        display: flex;\r\n        flex-direction: column;\r\n        justify-content: space-around;\r\n        position: absolute;\r\n        z-index: 5;\r\n    }\r\n\r\n    .icons i {\r\n        position: absolute;\r\n        color: #fff;\r\n        font-size: 3rem;\r\n        left: 10%;\r\n    }\r\n\r\n    .icons .fa-code {\r\n        \r\n        top: 10%;\r\n        animation: moveIcons 8s ease infinite;\r\n        animation-delay: 0.5s;\r\n    }\r\n\r\n    .icons .fa-js {\r\n        top: 30%;\r\n        animation: moveIcons 8s ease infinite;\r\n        animation-delay: 2s;\r\n    }\r\n\r\n    .icons .fa-vuejs {\r\n        top: 70%;\r\n        animation: moveIcons 8s ease infinite;\r\n        animation-delay: 3s;\r\n    }\r\n\r\n    .icons .fa-php {\r\n        top: 90%;\r\n        animation: moveIcons 8s ease infinite;\r\n        animation-delay: 4s;\r\n    }\r\n\r\n}\r\n\r\n\r\n\r\n","\r\n@keyframes moveIcons {\r\n    0% {transform: rotate(55deg); left: 10%; opacity: 10%;}\r\n    50% {transform: rotate(55deg); left: 80%; color: #f9f871;}\r\n    100% {transform: rotate(-55deg); left: 10%;}\r\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/styles/_navigation.scss","webpack://./src/styles/main.scss","webpack://./src/styles/_variables.scss","webpack://./src/styles/_reset.scss","webpack://./src/styles/_animations.scss"],"names":[],"mappings":"AAEA;EACI,WAAA;ACAJ;;ADGA;EACI,WAAA;EACA,UAAA;EACA,SAAA;EACA,WAAA;EACA,eAAA;EACA,aAAA;EACA,WAAA;EACA,gBAAA;ACAJ;ADEI;EACI,aAAA;EACA,8BAAA;EACA,kBAAA;EACA,iBAAA;ACAR;ADEQ;EACI,qBAAA;EACA,qBAAA;EACA,cAAA;EACA,mBEtBK;EFuBL,iBAAA;EACA,kBAAA;EACA,cAAA;EACA,iCAAA;EACA,uBAAA;ACAZ;ADGQ;EACI,sFAAA;EACA,cElCC;ADiCb;;AEnCA;;;;;;;;;;;;;EAaC,SAAA;EACA,UAAA;EACA,SAAA;EACA,eAAA;EACA,aAAA;EACA,wBAAA;AFsCD;;AEpCA,gDAAA;AACA;;EAEC,cAAA;AFuCD;;AErCA;EACC,cAAA;AFwCD;;AEtCA;EACC,gBAAA;AFyCD;;AEvCA;EACC,YAAA;AF0CD;;AExCA;;EAEC,WAAA;EACA,aAAA;AF2CD;;AEzCA;EACC,yBAAA;EACA,iBAAA;AF4CD;;AEzCA;EACC,qBAAA;AF4CD;;AGxFA;EACI;IAAI,wBAAA;IAA0B,SAAA;IAAW,YAAA;EH8F3C;EG7FE;IAAK,wBAAA;IAA0B,SAAA;IAAW,cAAA;EHkG5C;EGjGE;IAAM,yBAAA;IAA2B,SAAA;EHqGnC;AACF;AA7FA;EACI,SAAA;AA+FJ;;AA5FA;EACI,UAAA;EACA,SAAA;AA+FJ;;AA3FA;EACI,aAAA;EACA,WAAA;AA8FJ;;AA3FA;EACI,SAAA;EACA,WAAA;EACA,aAAA;EACA,mBC9BS;ED+BT,WAAA;EACA,kBAAA;AA8FJ;AA5FI;EACI,aAAA;EACA,UAAA;EACA,4GAAA;EAEA,sBAAA;EACA,kBAAA;AA6FR;AA1FQ;EACI,kBAAA;EACA,WAAA;EACA,yBAAA;AA4FZ;AAzFQ;EACI,SAAA;EACA,WAAA;EACA,gCAAA;EACA,eCtDI;ADiJhB;AAxFQ;EACI,cCzDC;ED0DD,mBCxDK;EDyDL,qBAAA;EACA,iBAAA;EACA,kBAAA;EACA,gBAAA;EACA,iCC9DA;ADwJZ;AAvFQ;EACI,sFChEA;ADyJZ;AArFI;EACI,sFAAA;EACA,UAAA;EACA,kBAAA;EACA,QAAA;EACA,QAAA;EACA,aAAA;EACA,iBAAA;EACA,iCC9EI;ED+EJ,gBAAA;EACA,WAAA;AAuFR;AApFI;EACI,QAAA;EACA,QAAA;EACA,UAAA;EACA,0BAAA;EACA,aAAA;EACA,sBAAA;EACA,6BAAA;EACA,kBAAA;EACA,UAAA;AAsFR;AAnFI;EACI,kBAAA;EACA,WAAA;EACA,eAAA;EACA,SAAA;AAqFR;AAlFI;EAEI,QAAA;EACA,qCAAA;EACA,qBAAA;AAmFR;AAhFI;EACI,QAAA;EACA,qCAAA;EACA,mBAAA;AAkFR;AA/EI;EACI,QAAA;EACA,qCAAA;EACA,mBAAA;AAiFR;AA9EI;EACI,QAAA;EACA,qCAAA;EACA,mBAAA;AAgFR","sourcesContent":["@import './variables';\r\n\r\n.main-header {\r\n    width: 100%;\r\n}\r\n\r\n.main-nav {\r\n    color: #fff;\r\n    padding: 0;\r\n    margin: 0;\r\n    width: 100%;\r\n    position: fixed;\r\n    display: flex;\r\n    z-index: 20;\r\n    margin-top: 20px;\r\n\r\n    ul {\r\n        display: flex;\r\n        justify-content: space-between;\r\n        margin-right: 50px;\r\n        margin-left: auto;\r\n\r\n        li a {\r\n            text-decoration: none;\r\n            display: inline-block;\r\n            color: #2F4858;\r\n            background: $btn-background;\r\n            padding: 5px 20px;\r\n            border-radius: 5px;\r\n            margin: 0 15px;\r\n            font-family: 'Roboto', sans-serif;\r\n            transition: all 2s ease;\r\n        }\r\n\r\n        li a:hover {\r\n            background: linear-gradient(to right top, #f9f871, #b1e57a, #71cd87, #38b290, #039590);\r\n            color: $main-color;\r\n        }\r\n    }\r\n}\r\n","@import './navigation.scss';\r\n\r\n@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap');\r\n\r\n@import './reset.scss';\r\n\r\n@import './variables';\r\n\r\n@import './animations.scss';\r\n\r\n\r\n\r\n\r\nhtml {\r\n    margin: 0;\r\n}\r\n\r\nbody {\r\n    padding: 0;\r\n    margin: 0;\r\n}\r\n\r\n\r\n.wrapper {\r\n    height: 100vh;\r\n    width: 100%;\r\n}\r\n\r\n.showcase {\r\n    margin: 0;\r\n    width: 100%;\r\n    height: 100vh;\r\n    background: $main-color;\r\n    z-index: 10;\r\n    position: relative;\r\n\r\n    .showcase-content {\r\n        height: 100vh;\r\n        width: 50%;\r\n        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),\r\n        url('../assets/images/profilepic.jpg');\r\n        background-size: cover;\r\n        position: relative;\r\n\r\n\r\n        .showcase-content-text {\r\n            position: absolute;\r\n            bottom: 50%;\r\n            transform: translate(50%);\r\n        }\r\n\r\n        .showcase-content-text  h1 {\r\n            margin: 0;\r\n            color: #fff;\r\n            font-family: 'Anton', sans-serif;\r\n            font-size: $title-size-bg;\r\n        }\r\n\r\n        .showcase-content-text .action-btn {\r\n            color: $main-color;\r\n            background: $btn-background;\r\n            display: inline-block;\r\n            padding: 5px 20px;\r\n            border-radius: 8px;\r\n            margin-top: 30px;\r\n            font-family: $main-font;\r\n        }\r\n\r\n        .showcase-content-text .action-btn:hover {\r\n            background: $btn-hover;\r\n        }\r\n    }\r\n\r\n    .showcase-bio {\r\n        background: linear-gradient(to right top, #f9f871, #b1e57a, #71cd87, #38b290, #039590);\r\n        width: 50%;\r\n        position: absolute;\r\n        top: 50%;\r\n        right: 0;\r\n        padding: 20px;\r\n        font-size: 1.5rem;\r\n        font-family: $main-font;\r\n        line-height: 1.5;\r\n        z-index: 10;\r\n    }\r\n\r\n    .icons {\r\n        top: 10%;\r\n        right: 0;\r\n        width: 50%;\r\n        height: calc(100% - 100px);\r\n        display: flex;\r\n        flex-direction: column;\r\n        justify-content: space-around;\r\n        position: absolute;\r\n        z-index: 5;\r\n    }\r\n\r\n    .icons i {\r\n        position: absolute;\r\n        color: #fff;\r\n        font-size: 3rem;\r\n        left: 10%;\r\n    }\r\n\r\n    .icons .fa-code {\r\n        \r\n        top: 10%;\r\n        animation: moveIcons 8s ease infinite;\r\n        animation-delay: 0.5s;\r\n    }\r\n\r\n    .icons .fa-js {\r\n        top: 30%;\r\n        animation: moveIcons 8s ease infinite;\r\n        animation-delay: 2s;\r\n    }\r\n\r\n    .icons .fa-vuejs {\r\n        top: 70%;\r\n        animation: moveIcons 8s ease infinite;\r\n        animation-delay: 3s;\r\n    }\r\n\r\n    .icons .fa-php {\r\n        top: 90%;\r\n        animation: moveIcons 8s ease infinite;\r\n        animation-delay: 4s;\r\n    }\r\n\r\n}\r\n\r\n\r\n\r\n","\r\n$title-size-bg: 4rem;\r\n$main-color: #23233B;\r\n$main-font: 'Roboto', sans-serif;\r\n$btn-background: #CEFBE3;\r\n$btn-hover: linear-gradient(to right top, #f9f871, #b1e57a, #71cd87, #38b290, #039590);\r\n","html, body, div, span, applet, object, iframe,\r\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\r\na, abbr, acronym, address, big, cite, code,\r\ndel, dfn, em, img, ins, kbd, q, s, samp,\r\nsmall, strike, strong, sub, sup, tt, var,\r\nb, u, i, center,\r\ndl, dt, dd, ol, ul, li,\r\nfieldset, form, label, legend,\r\ntable, caption, tbody, tfoot, thead, tr, th, td,\r\narticle, aside, canvas, details, embed, \r\nfigure, figcaption, footer, header, hgroup, \r\nmenu, nav, output, ruby, section, summary,\r\ntime, mark, audio, video {\r\n\tmargin: 0;\r\n\tpadding: 0;\r\n\tborder: 0;\r\n\tfont-size: 100%;\r\n\tfont: inherit;\r\n\tvertical-align: baseline;\r\n}\r\n/* HTML5 display-role reset for older browsers */\r\narticle, aside, details, figcaption, figure, \r\nfooter, header, hgroup, menu, nav, section {\r\n\tdisplay: block;\r\n}\r\nbody {\r\n\tline-height: 1;\r\n}\r\nol, ul {\r\n\tlist-style: none;\r\n}\r\nblockquote, q {\r\n\tquotes: none;\r\n}\r\nblockquote:before, blockquote:after,\r\nq:before, q:after {\r\n\tcontent: '';\r\n\tcontent: none;\r\n}\r\ntable {\r\n\tborder-collapse: collapse;\r\n\tborder-spacing: 0;\r\n}\r\n\r\na {\r\n\ttext-decoration: none;\r\n}","\r\n@keyframes moveIcons {\r\n    0% {transform: rotate(55deg); left: 10%; opacity: 10%;}\r\n    50% {transform: rotate(55deg); left: 80%; color: #f9f871;}\r\n    100% {transform: rotate(-55deg); left: 10%;}\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -876,4 +876,4 @@ var image = __webpack_require__(/*! ./assets/images/profilepic.jpg */ "./src/ass
 
 /******/ })()
 ;
-//# sourceMappingURL=bundleb66a2a51ea1b7d0a87bd.js.map
+//# sourceMappingURL=bundlebe43a0586a2214dc10c1.js.map

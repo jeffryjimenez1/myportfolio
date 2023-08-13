@@ -1,0 +1,40 @@
+@import './variables';
+
+.main-header {
+    width: 100%;
+}
+
+.main-nav {
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    z-index: 20;
+    margin-top: 20px;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 50px;
+        margin-left: auto;
+
+        li a {
+            text-decoration: none;
+            display: inline-block;
+            color: #2F4858;
+            background: $btn-background;
+            padding: 5px 20px;
+            border-radius: 5px;
+            margin: 0 15px;
+            font-family: 'Roboto', sans-serif;
+            transition: all 2s ease;
+        }
+
+        li a:hover {
+            background: linear-gradient(to right top, #f9f871, #b1e57a, #71cd87, #38b290, #039590);
+            color: $main-color;
+        }
+    }
+}
